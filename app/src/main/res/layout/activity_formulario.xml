@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="apps.weverton.com.br.agenda.FormularioActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="225dp">
+
+            <ImageView
+                android:id="@+id/formularioImgFoto"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#00a8ec"
+                android:src="@drawable/person" />
+
+            <Button
+                android:id="@+id/formularioBtnFoto"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/fundo_camera" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/formularioEdtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/formularioEdtEndereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Endereço"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/formularioEdtTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefone"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/formularioEdtSite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Site"
+            android:inputType="text" />
+
+
+        <RatingBar
+            android:id="@+id/formularioRtbNota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:max="10"
+            android:numStars="5"
+            android:rating="5.0" />
+
+
+    </LinearLayout>
+</ScrollView>
